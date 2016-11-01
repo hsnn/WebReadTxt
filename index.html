@@ -318,7 +318,7 @@
 			                success:function(result){
 			                    var data = $.base64.decode(result);//转变为json数据
 			                    var json = decodeURIComponent(escape(data)); 
-			                    callback(json);
+			                    callback(data);
 			                }
 			            })
 			        }
