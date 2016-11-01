@@ -449,7 +449,7 @@
 			        }
 			        //定义
 			        var getFictionInfo = function(callback){
-			            $.get('/data/chapter.json',function(data){
+			            $.get('data/chapter.json',function(data){
 			                //TODO 获得章节信息之后的回调
 			                Chapter_id=Util.StorageGetter('last_chapter_id');
 			                if(Chapter_id == null){
@@ -461,7 +461,7 @@
 			        }   
 			        var getCurChapterContent = function(chapter_id,callback){
 			            //获取章节内容
-			            $.get('/data/data' + chapter_id + '.json',function(data){
+			            $.get('data/data' + chapter_id + '.json',function(data){
 			                if(data.result == 0){
 			                    var url = data.jsonp;
 			                    Util.getBSONP(url,function(data){
